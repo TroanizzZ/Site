@@ -19,7 +19,7 @@ body {
 
 /* Экран телефона */
 .screen {
-    width: 375px;
+    width: 450px;
     height: 812px;
     background-color: #E4F3EC; /* PASTEL_MINT */
     border-radius: 20px;
