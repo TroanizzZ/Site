@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация - FamiMoney</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="phone-frame">
-        <div class="screen">
-            <header>
-                <button class="back-button" onclick="window.history.back()">&larr;</button>
-                <h1>Авторизация</h1>
-                <button class="menu-button">&#x2026;</button>
-            </header>
-            <main>
-                <h2>Авторизация</h2>
-                <form action="login_action.html" method="POST">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Введите email" required>
-                    
-                    <label for="password">Пароль</label>
-                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
-                    
-                    <button type="submit" class="nav-button">Войти</button>
-                </form>
-                <a href="registration_page.html" class="nav-button">Создать аккаунт</a>
-                <a href="password_recovery_page.html" class="nav-button">Забыли пароль?</a>
-                <div class="accent-circle"></div>
-            </main>
-            <footer>
-                <div class="gesture-bar"></div>
-            </footer>
-        </div>
-    </div>
+    <header>
+        <h1>Авторизация</h1>
+    </header>
+    <main>
+        <form action="login.html" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Введите email" required>
+            
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            
+            <button type="submit" class="nav-button">Войти</button>
+        </form>
+        <a href="registration_page.html" class="nav-button">Создать аккаунт</a>
+        <a href="password_recovery_page.html" class="nav-button">Забыли пароль?</a>
+        <div class="accent-circle"></div>
+    </main>
+    <footer>
+        <div class="gesture-bar"></div>
+    </footer>
 </body>
 </html>
