@@ -6,61 +6,34 @@ body {
     background-color: #A4D7B5; /* SOFT_GREEN */
 }
 
-
-/* Экран телефона */
-.screen {
-    width: 100%;
-    height: 100vh; /* 100% от высоты экрана */
-    background-color: #E4F3EC; /* PASTEL_MINT */
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
 /* Хедер */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.back-button, .menu-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #34656D; /* DEEP_TURQUOISE */
+    align-items: center;
+    padding: 15px;
+    background-color: #34656D; /* DEEP_TURQUOISE */
+    color: white;
 }
 
 h1 {
-    font-size: 24px;
-    color: #34656D; /* DEEP_TURQUOISE */
     margin: 0;
+    font-size: 24px;
+}
+
+/* Кнопки */
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Основной контент */
 main {
-    flex: 1;
-    overflow-y: auto;
-    padding: 10px 0;
-}
-
-/* Футер */
-footer {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.gesture-bar {
-    width: 100px;
-    height: 5px;
-    background-color: #34656D; /* DEEP_TURQUOISE */
-    border-radius: 2.5px;
-    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Кнопки навигации */
@@ -90,7 +63,21 @@ footer {
     height: 40px;
     background-color: #FF6F61; /* BRIGHT_CORAL_ORANGE */
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.gesture-bar {
+    width: 100px;
+    height: 5px;
+    background-color: #34656D; /* DEEP_TURQUOISE */
+    border-radius: 2.5px;
+    margin: 0 auto;
 }
